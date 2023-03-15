@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>About</title>
+
+    </head>
+
+    <body>
+        <div>
+            <header class="header">
+                <h3 class="center">About Us</h3>
+            </header>
+        </div>
+        <!--Nav Bar-->
+        <div class="topnav">
+            <a href="/Week8/homepage/index.html">Home</a>
+            <a href="/Week8/homepage/about.html" class="active">About</a>
+            <a href="/Week8/homepage/contact.html">Contact</a>
+            <a href="/Week8/homepage/resources.html">Resources</a>
+            <div class="login-container">
+                <!--fix action/action page javascript?-->
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Username" name="username" autocomplete="off">
+                    <input type="password" placeholder="Password" name="psw" autocomplete="off">
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <section class="center">
+                <p> This is where I write a little bit about "us".</p> <br>
+                <p> There should probably be multiple paragraphs.</p> <br>
+                <p> I could tell a whole nonsensical story about fuchsia platypuses.
+                    Great, now I need an image.
+                </p>
+                <img class="fp" alt="Fuchsia Platypus" src="https://maryelyse1gmailcom.files.wordpress.com/2023/01/fuchsia-platypus-1.png?w=1024">
+
+            </section>
+        </div>
+
+
+        <!--Popup Chat-->
+        <button class="openBtn" onclick="openForm()">Chat</button>
+        <div class="chatPop" id="myForm">
+            <form class="form">
+                <h1>Chat</h1>
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type message..." name="msg" required></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn closeBtn" onclick="closeForm()">Cancel</button>
+            </form>
+            <script src="webScript.js"></script>
+
+            <!--internal links -->
+        <div>
+            <section>
+                <a href="/Week8/homepage/index.html">Home</a>
+                <a href="/Week8/homepage/about.html">About Us</a>
+                <a href="/Week8/homepage/contact.html">Contact Us</a>
+                <a href="/Week8/homepage/resources.html">Resources</a>
+            </section>
+        </div>
+    </body>
+</html>
